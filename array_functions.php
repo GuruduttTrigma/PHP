@@ -184,26 +184,26 @@ Array
 
 ******************************************* 6. PHP array_diff_key() Function *******************************************
 
-Description 	:	The array_diff_key() function compares the keys of two (or more) arrays, and returns the differences.
+Description 	: The array_diff_key() function compares the keys of two (or more) arrays, and returns the differences.
 							This function compares the keys of two (or more) arrays, and return an array that contains the entries from array1 that are not present in array2 or array3, etc.
 
-Input  			: 	One or More array that represents a possible record set 
+Input  		: One or More array that represents a possible record set 
 
-Syntax 			:   array_diff_key(array1,array2,array3...)
+Syntax 		:  array_diff_key(array1,array2,array3...)
 
 Parameters 	: 
-	1. array1	=> Required
-	2. array2	=> Required
-	3. array3	=> Optional
+	1. array1 => Required
+	2. array2 => Required
+	3. array3 => Optional
 	
 Example : 
 
 <?php
-		$a1	=	array("a"=>"red","b"=>"green","c"=>"blue");
-		$a2	=	array("a"=>"red","c"=>"blue","d"=>"pink");
-		$result = array_diff_key($a1,$a2);
-		
-		echo "<pre>";print_r($result);die;
+	$a1	=	array("a"=>"red","b"=>"green","c"=>"blue");
+	$a2	=	array("a"=>"red","c"=>"blue","d"=>"pink");
+	$result = array_diff_key($a1,$a2);
+
+	echo "<pre>";print_r($result);die;
 ?>
 
 Output : 
@@ -217,19 +217,19 @@ Array
 
 ******************************************* 7. PHP array_fill() Function  *******************************************
 
-Description 	:	The array_fill() function fills an array with values.
+Description 	: The array_fill() function fills an array with values.
 
-Syntax 			:     array_fill(index,number,value);
+Syntax 		: array_fill(index,number,value);
 
 Parameters 	: 
-	1. index		=> Required
-	2. number	=> Required
-	3. value		=> Required
+	1. index  => Required
+	2. number => Required
+	3. value  => Required
 	
 Example : 
 
 <?php
-	$a1	= array_fill(1,4,"blue");
+	$a1 = array_fill(1,4,"blue");
 	echo "<pre>";print_r($a1);
 ?>
 
@@ -247,19 +247,19 @@ Array
 
 ******************************************* 8. PHP array_fill_keys() Function *******************************************
 
-Description 	:	The array_fill_keys() function fills an array with values, specifying keys.
+Description 	: The array_fill_keys() function fills an array with values, specifying keys.
 
-Syntax 			:   array_fill_keys(keys,value);
+Syntax 		: array_fill_keys(keys,value);
 
 Parameters 	: 
-	1. keys		=> Required
-	2. value		=> Required
+	1. keys	 => Required
+	2. value => Required
 	
 Example : 
 
 <?php
 	$keys	= array("a","b","c","d");
-	$a1		= array_fill_keys($keys,"blue");
+	$a1	= array_fill_keys($keys,"blue");
 
 	echo "<pre>";print_r($a1);die;
 ?>
@@ -278,13 +278,13 @@ Array
 
 ******************************************* 9. PHP array_filter() Function  *******************************************
 
-Description 	:	The array_filter() function filters the values of an array using a callback function.
+Description 	: The array_filter() function filters the values of an array using a callback function.
 							This function passes each value of the input array to the callback function. If the callback function returns true, the current value from input is returned into the result array. Array keys are preserved. 
 
-Syntax 			:    array_filter(array,callbackfunction)
+Syntax 		:    array_filter(array,callbackfunction)
 
 Parameters 	: 
-	1. array							=> Required
+	1. array		=> Required
 	2. callbackfunction	=> Required
 	
 Example : 
@@ -299,17 +299,17 @@ Output :
 
 ******************************************* 10. PHP array_flip() Function *******************************************
 
-Description 	:	The array_flip() function flips/exchanges all keys with their associated values in an array.
+Description 	: The array_flip() function flips/exchanges all keys with their associated values in an array.
 
-Syntax 			:     array_flip(array);
+Syntax 		: array_flip(array);
 
 Parameters 	: 
-	1. array		=> Required
+	1. array => Required
 	
 Example : 
 
 <?php
-	$a1			= array("a"=>"red","b"=>"green","c"=>"blue","d"=>"yellow");
+	$a1	= array("a"=>"red","b"=>"green","c"=>"blue","d"=>"yellow");
 	$result	= array_flip($a1);
 
 	echo "<pre>";print_r($result);die;
@@ -328,19 +328,19 @@ Array
 
 ******************************************* 11. PHP array_key_exists() Function  *******************************************
 
-Description 	:	The array_key_exists() function checks an array for a specified key, and returns true if the key exists and false if the key does not exist.
+Description 	: The array_key_exists() function checks an array for a specified key, and returns true if the key exists and false if the key does not exist.
 
-Tip: 					Remember that if you skip the key when you specify an array, an integer key is generated, starting at 0 and increases by 1 for each value. 
+Tip		: Remember that if you skip the key when you specify an array, an integer key is generated, starting at 0 and increases by 1 for each value. 
 
-Syntax 			:   array_key_exists(key,array) 
+Syntax 		: array_key_exists(key,array) 
 
 Parameters 	: 
-	1. array		=> Required
+	1. array  => Required
 	
 Example : 
 
 <?php
-	$a=array("Volvo"=>"XC90","BMW"=>"X5");
+	$a	= array("Volvo"=>"XC90","BMW"=>"X5");
 	if (key_exists("Toyota",$a))  {
 		echo "Key exists!";
 	}  else  {
@@ -358,18 +358,18 @@ Output :
 
 Description 	:	The array_keys() function returns an array containing the keys.
 
-Syntax 			:    array_keys(array,value,strict) 
+Syntax 		:    array_keys(array,value,strict) 
 
 Parameters 	: 
-	1. array		=> Required
-	2. value		=> Optional
-	3. strict		=> Optional
+	1. array  => Required
+	2. value  => Optional
+	3. strict => Optional
 	
 Example : 
 
 <?php
-	$a	=	array("Volvo"=>"XC90","BMW"=>"X5","Toyota"=>"Highlander");
-	$c 	=	array_keys($a);
+	$a	= array("Volvo"=>"XC90","BMW"=>"X5","Toyota"=>"Highlander");
+	$c 	= array_keys($a);
 
 	echo "<pre>";print_r($c);die;
 ?>
@@ -386,18 +386,18 @@ Array
 
 ******************************************* 13. PHP array_map() Function  *******************************************
 
-Description 	:	The array_map() function sends each value of an array to a user-made function, and returns an array with new values, 
-							given by the user-made function.
+Description 	: The array_map() function sends each value of an array to a user-made function, and returns an array with new values, 
+		  given by the user-made function.
 							
-Tip					: 	You can assign one array to the function, or as many as you like.
+Tip		: You can assign one array to the function, or as many as you like.
 
-Syntax 			:	array_map(myfunction,array1,array2,array3...) 
+Syntax 		: array_map(myfunction,array1,array2,array3...) 
 
 Parameters 	: 
-	1. myfunction	=> Required
-	2. array1			=> Required
-	3. array2			=> Optional
-	4. array3			=> Optional
+	1. myfunction => Required
+	2. array1     => Required
+	3. array2     => Optional
+	4. array3     => Optional
 	
 Example 1: 	Send each value of an array to a function, multiply each value by itself, and return an array with the new values.
 
@@ -406,8 +406,8 @@ Example 1: 	Send each value of an array to a function, multiply each value by it
 		return($num*$num);
 	}
 	
-	$a	=	array (1,2,3,4,5);
-	$c 	= 	array_map ("myfunction",$a);
+	$a	= array (1,2,3,4,5);
+	$c 	= array_map ("myfunction",$a);
 	echo "<pre>";print_r($c);die;
 ?>
 
@@ -422,7 +422,7 @@ Array
     [4] => 25
 )
 
-Example 2 : 	Using a user-made function to change the values of an array:
+Example 2 : Using a user-made function to change the values of an array:
 
 <?php
 	function myfunction($v)  {
@@ -446,7 +446,7 @@ Array
     [2] => Cat
 )
 
-Example 3 : 	Using two arrays.
+Example 3 : Using two arrays.
 
 <?php
 	function myfunction($v1,$v2)  {
@@ -472,7 +472,7 @@ Array
 )
 
 
-Example 4 : 	Change all letters of the array values to uppercase.
+Example 4 : Change all letters of the array values to uppercase.
 
 <?php
 	function myfunction($v)  {
@@ -496,8 +496,8 @@ Array
 Example 5 : Assign null as the function name.
 
 <?php 
-	$a1	=	array("Dog","Cat");
-	$a2	=	array("Puppy","Kitten");
+	$a1	= array("Dog","Cat");
+	$a2	= array("Puppy","Kitten");
 	$c	= array_map(null,$a1,$a2);
 	echo "<pre>";print_r($c);die;
 ?>
@@ -522,30 +522,29 @@ Array
 
 ******************************************* 14. PHP array_merge() Function  *******************************************
 
-Description 	:	The array_merge() function merges one or more arrays into one array.
+Description 	: The array_merge() function merges one or more arrays into one array.
 
-Tip: 					You can assign one array to the function, or as many as you like.
+Tip		: You can assign one array to the function, or as many as you like.
 
-Note: 				If two or more array elements have the same key, the last one overrides the others.
+Note		: If two or more array elements have the same key, the last one overrides the others.
 
-Note: 				If you assign only one array to the array_merge() function, and the keys are integers, the function returns a new array with integer 
-							keys starting at 0 and increases by 1 for each value (See Example 2 below).
+Note		: If you assign only one array to the array_merge() function, and the keys are integers, the function returns a new array with integer keys starting at 0 and increases by 1 for each value (See Example 2 below).
 
-Tip: 					The difference between this function and the array_merge_recursive() function is when two or more array elements have the same key. 
-							Instead of override the keys, the array_merge_recursive() function makes the value as an array.
+Tip		: The difference between this function and the array_merge_recursive() function is when two or more array elements have the same key. 
+		Instead of override the keys, the array_merge_recursive() function makes the value as an array.
 
-Syntax 			:	 array_merge(array1,array2,array3...) 
+Syntax 		: array_merge(array1,array2,array3...) 
 
 Parameters 	: 
-	1. array1		=> Required
-	2. array2		=> Optional
-	3. array3		=> Optional
+	1. array1 => Required
+	2. array2 => Optional
+	3. array3 => Optional
 	
 Example 1: 
 
 <?php
-	$a1	=	array("red","green");
-	$a2	=	array("blue","yellow");
+	$a1	= array("red","green");
+	$a2	= array("blue","yellow");
 	$c 	= array_merge($a1,$a2);
 	echo "<pre>";print_r($c);die;
 ?>
@@ -582,24 +581,24 @@ Array
 
 ******************************************* 15. PHP array_merge_recursive() Function  *******************************************
 
-Description 	:	The array_merge_recursive() function merges one ore more arrays into one array.
+Description 	: The array_merge_recursive() function merges one ore more arrays into one array.
 
-							The difference between this function and the array_merge() function is when two or more array elements have the same key. Instead of override the keys, the array_merge_recursive() function makes the value as an array.
+		  The difference between this function and the array_merge() function is when two or more array elements have the same key. Instead of override the keys, the array_merge_recursive() function makes the value as an array.
 
-Note: 				If you assign only one array to the array_merge_recursive() function, it will behave exactly the same as the array_merge() function.
+Note		: If you assign only one array to the array_merge_recursive() function, it will behave exactly the same as the array_merge() function.
 
-Syntax 			:   array_merge_recursive(array1,array2,array3...) 
+Syntax 		: array_merge_recursive(array1,array2,array3...) 
 
 Parameters 	: 
-	1. array		=> Required
-	2. value		=> Optional
-	3. strict		=> Optional
+	1. array  => Required
+	2. value  => Optional
+	3. strict => Optional
 	
 Example : 
 
 <?php
-	$a1	=	array("a"=>"red","b"=>"green");
-	$a2	=	array("c"=>"blue","b"=>"yellow");
+	$a1	= array("a"=>"red","b"=>"green");
+	$a2	= array("c"=>"blue","b"=>"yellow");
 	$c 	= array_merge_recursive($a1,$a2);
 	echo "<pre>";print_r($c);die;
 ?>
@@ -620,12 +619,12 @@ Array
 
 ******************************************* 16. PHP array_pop() Function  *******************************************
 
-Description 	:	The array_pop() function deletes the last element of an array.
+Description 	: The array_pop() function deletes the last element of an array.
 
-Syntax 			:	array_pop(array) 
+Syntax 		: array_pop(array) 
 
 Parameters 	: 
-	1. array		=> Required
+	1. array  => Required
 	
 Example : 
 
@@ -647,12 +646,12 @@ Array
 
 ******************************************* 17. PHP array_product() Function   *******************************************
 
-Description 	:	The array_product() function calculates and returns the product of an array.
+Description 	: The array_product() function calculates and returns the product of an array.
 
-Syntax 			:     array_product(array) 
+Syntax 		: array_product(array) 
 
 Parameters 	: 
-	1. array		=> Required
+	1. array => Required
 	
 Example : 
 
@@ -667,23 +666,23 @@ Output :
 
 ******************************************* 18. PHP array_push() Function  *******************************************
 
-Description 	:	The array_push() function inserts one or more elements to the end of an array.
+Description 	: The array_push() function inserts one or more elements to the end of an array.
 
-Tip					:	You can add one value, or as many as you like.
+Tip		: You can add one value, or as many as you like.
 
-Note				:	Even if your array has string keys, your added elements will always have numeric keys (See example below).
+Note		: Even if your array has string keys, your added elements will always have numeric keys (See example below).
 
-Syntax 			:     array_push(array,value1,value2...) 
+Syntax 		: array_push(array,value1,value2...) 
 
 Parameters 	: 
-	1. array		=> Required
-	2. value1	=> Required
-	3. value2	=> Optional
+	1. array  => Required
+	2. value1 => Required
+	3. value2 => Optional
 	
 Example : 
 
 <?php
-	$a	=	array("red","green");
+	$a	= array("red","green");
 	array_push($a,"blue","yellow");
 	
 	echo "<pre>";print_r($a);die;
@@ -702,23 +701,23 @@ Array
 
 ******************************************* 19. PHP array_rand() Function  *******************************************
 
-Description 	:	The array_rand() function returns a random key from an array, or it returns an array of random keys if you specify that the 
-							function should return more than one key.
+Description 	: The array_rand() function returns a random key from an array, or it returns an array of random keys if you specify that the 
+		  function should return more than one key.
 
-Syntax 			:   array_rand(array,number) 
+Syntax 		: array_rand(array,number) 
 
 Parameters 	: 
-	1. array		=> Required
-	2. number	=> Optional
+	1. array  => Required
+	2. number => Optional
 	
 Example : 
 
 <?php
-$a=array("red","green","blue","yellow","brown");
-$random_keys=array_rand($a,3);
-echo $a[$random_keys[0]]."<br>";
-echo $a[$random_keys[1]]."<br>";
-echo $a[$random_keys[2]];
+	$a=array("red","green","blue","yellow","brown");
+	$random_keys=array_rand($a,3);
+	echo $a[$random_keys[0]]."<br>";
+	echo $a[$random_keys[1]]."<br>";
+	echo $a[$random_keys[2]];
 ?>
 
 Output : 
@@ -730,20 +729,20 @@ brown
 
 ******************************************* 20. PHP array_search() Function   *******************************************
 
-Description 	:	The array_search() function search an array for a value and returns the key.
+Description 	: The array_search() function search an array for a value and returns the key.
 
-Syntax 			:	array_search(value,array,strict) 
+Syntax 		: array_search(value,array,strict) 
 
 Parameters 	: 
-	1. value		=> Required
-	1. array		=> Required
-	2. strict		=> Optional
+	1. value  => Required
+	1. array  => Required
+	2. strict => Optional
 	
 Example : 
 
 <?php
-$a=array("a"=>"red","b"=>"green","c"=>"blue");
-echo array_search("red",$a);
+	$a=array("a"=>"red","b"=>"green","c"=>"blue");
+	echo array_search("red",$a);
 ?>
 
 Output : 
@@ -753,20 +752,20 @@ a
 
 ******************************************* 21. PHP array_shift() Function  *******************************************
 
-Description 	:	The array_shift() function removes the first element from an array, and returns the value of the removed element.
+Description 	: The array_shift() function removes the first element from an array, and returns the value of the removed element.
 
-Note				:	If the keys are numeric, all elements will get new keys, starting from 0 and increases by 1 (See example below).
+Note		: If the keys are numeric, all elements will get new keys, starting from 0 and increases by 1 (See example below).
 
-Syntax 			:    array_shift(array) 
+Syntax 		: array_shift(array) 
 
 Parameters 	: 
-	1. array		=> Required
+	1. array  => Required
 	
 Example : 
 
 <?php
-$a=array(0=>"red",1=>"green",2=>"blue");
-echo "<pre>";print_r($a);die;
+	$a=array(0=>"red",1=>"green",2=>"blue");
+	echo "<pre>";print_r($a);die;
 ?>
 
 Output : 
@@ -776,18 +775,18 @@ Array ( [0] => green [1] => blue )
 
 ******************************************* 22. PHP array_sum() Function  *******************************************
 
-Description 	:	The array_sum() function returns the sum of all the values in the array.
+Description 	: The array_sum() function returns the sum of all the values in the array.
 
-Syntax 			:   array_sum(array) 
+Syntax 		: array_sum(array) 
 
 Parameters 	: 
-	1. array		=> Required
+	1. array => Required
 	
 Example : 
 
 <?php
-$a=array(5,15,25);
-echo array_sum($a);
+	$a=array(5,15,25);
+	echo array_sum($a);
 ?>
 
 Output : 
@@ -796,23 +795,22 @@ Output :
 
 ******************************************* 23. PHP array_unique() Function   *******************************************
 
-Description 	:	The array_unique() function removes duplicate values from an array. If two or more array values are the same, the first appearance 
-							will be kept and the other will be removed.
+Description 	: The array_unique() function removes duplicate values from an array. If two or more array values are the same, the first appearance will be kept and the other will be removed.
 
-Note				: 	The returned array will keep the first array item's key type.
+Note		: The returned array will keep the first array item's key type.
 
-Syntax 			:    array_unique(array) 
+Syntax 		: array_unique(array) 
 
 Parameters 	: 
-	1. array				=> Required
+	1. array	=> Required
 	2. sortingtype	=> Optional
 	
 Example : 
 
 <?php
-$a	=	array("a"=>"red","b"=>"green","c"=>"red");
-array_unique($a);
-echo "<pre>";print_r($a);die;
+	$a	= array("a"=>"red","b"=>"green","c"=>"red");
+	array_unique($a);
+	echo "<pre>";print_r($a);die;
 ?>
 
 Output : 
@@ -822,26 +820,26 @@ Output :
  
 *******************************************  24.PHP array_unshift() Function *******************************************
 
-Description 	:	The array_unshift() function inserts new elements to an array. The new array values will be inserted in the beginning of the array.
+Description 	:  The array_unshift() function inserts new elements to an array. The new array values will be inserted in the beginning of the array.
 
-Tip					: 	You can add one value, or as many as you like.
+Tip		:  You can add one value, or as many as you like.
 
-Note				: 	Numeric keys will start at 0 and increase by 1. String keys will remain the same.
+Note		:  Numeric keys will start at 0 and increase by 1. String keys will remain the same.
 
-Syntax 			:	array_unshift(array,value1,value2,value3...) 
+Syntax 		:  array_unshift(array,value1,value2,value3...) 
 
 Parameters 	: 
-	1. array		=> Required
-	2. value1	=> Required
-	2. value2	=> Optional
-	2. value3	=> Optional
+	1. array  => Required
+	2. value1 => Required
+	2. value2 => Optional
+	2. value3 => Optional
 	
 Example : 
 
 <?php
-$a=array("a"=>"red","b"=>"green");
-array_unshift($a,"blue");
-print_r($a);
+	$a=array("a"=>"red","b"=>"green");
+	array_unshift($a,"blue");
+	print_r($a);
 ?>
 
 Output : 
@@ -851,20 +849,20 @@ Output :
  
 ******************************************* 25. PHP array_values() Function  *******************************************
 
-Description 	:	The array_values() function returns an array containing all the values of an array.
+Description 	: The array_values() function returns an array containing all the values of an array.
 
-Tip					: 	The returned array will have numeric keys, starting at 0 and increase by 1.
+Tip		: The returned array will have numeric keys, starting at 0 and increase by 1.
 
-Syntax 			:    array_values(array) 
+Syntax 		: array_values(array) 
 
 Parameters 	: 
-	1. array		=> Required
+	1. array  => Required
 	
 Example : 
 
 <?php
-$a=array("Name"=>"Peter","Age"=>"41","Country"=>"USA");
-echo "<pre>";print_r(array_values($a));die;
+	$a=array("Name"=>"Peter","Age"=>"41","Country"=>"USA");
+	echo "<pre>";print_r(array_values($a));die;
 ?>
 
 Output : 
@@ -879,16 +877,16 @@ Array
 
 ******************************************* 26. PHP array_walk() Function  *******************************************
 
-Description 	:	The array_walk() function runs each array element in a user-defined function. The array's keys and values are parameters in the function.
+Description 	: The array_walk() function runs each array element in a user-defined function. The array's keys and values are parameters in the function.
 
-Note				: 	You can change an array element's value in the user-defined function by specifying the first parameter as a reference: &$value (See Example 2).
+Note		: You can change an array element's value in the user-defined function by specifying the first parameter as a reference: &$value (See Example 2).
 
-Tip					: 	To work with deeper arrays (an array inside an array), use the array_walk_recursive() function.
+Tip		: To work with deeper arrays (an array inside an array), use the array_walk_recursive() function.
 
-Syntax 			:    array_walk(array,myfunction,parameter...) 
+Syntax 		: array_walk(array,myfunction,parameter...) 
 
 Parameters 	: 
-	1. array				=> Required
+	1. array	=> Required
 	2. myfunction	=> Required
 	2. parameter	=> Optional
 	
@@ -911,11 +909,11 @@ The key c has the value blue
 
 ******************************************* 27. PHP compact() Function  *******************************************
 
-Description 	:	The compact() function creates an array from variables and their values.
+Description 	:  The compact() function creates an array from variables and their values.
 
-Note				:	Any strings that does not match variable names will be skipped.
+Note		:  Any strings that does not match variable names will be skipped.
 
-Syntax 			:    compact(var1,var2...) 
+Syntax 		:  compact(var1,var2...) 
 
 Parameters 	: 
 	1. var1	=> Required
@@ -944,16 +942,16 @@ Array
 
 ******************************************* 28. PHP in_array() Function  *******************************************
 
-Description 	:	The in_array() function searches an array for a specific value.
+Description 	: The in_array() function searches an array for a specific value.
 
-Note				: 	If the search parameter is a string and the type parameter is set to TRUE, the search is case-sensitive.
+Note		: If the search parameter is a string and the type parameter is set to TRUE, the search is case-sensitive.
 
-Syntax 			:	 in_array(search,array,type) 
+Syntax 		: in_array(search,array,type) 
 
 Parameters 	: 
-	1. search	=> Required
-	1. array		=> Required
-	2. type		=> Optional
+	1. search => Required
+	1. array  => Required
+	2. type	  => Optional
 	
 Example : 
 
@@ -974,15 +972,15 @@ Output :
 
 ******************************************* 29. PHP in_array() Function  *******************************************
 
-Description 	:	The range() function creates an array containing a range of elements.
-							This function returns an array of elements from low to high.
+Description 	: The range() function creates an array containing a range of elements.
+		  This function returns an array of elements from low to high.
 
-Note				: 	If the low parameter is higher than the high parameter, the range array will be from high to low.
+Note		: If the low parameter is higher than the high parameter, the range array will be from high to low.
 
-Syntax 			:	  range(low,high,step) 
+Syntax 		: range(low,high,step) 
 
 Parameters 	: 
-	1. low		=> Required
+	1. low	=> Required
 	1. high	=> Required
 	2. step	=> Optional
 	
