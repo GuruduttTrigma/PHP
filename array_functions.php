@@ -8,7 +8,7 @@ Description 	: Returns the values from a single column in the input array
 
 Input  		: An array that represents a possible record set returned from a database
 
-Syntax 		:  array_column(array,column_key,index_key); 
+Syntax 		: array_column(array,column_key,index_key); 
 
 Parameters 	: 
 	1. array	=> Required
@@ -19,22 +19,22 @@ Example :
 
 <?php
 	$a = array(
-			array(
-				'id' => 1,
-				'first_name' => 'Peter',
-				'last_name' => 'Griffin',
-			),
-			array(
-				'id' => 2,
-				'first_name' => 'Ben',
-				'last_name' => 'Smith',
-			),
-			array(
-				'id' => 3,
-				'first_name' => 'Joe',
-				'last_name' => 'Doe',
-			)
-		);
+		array(
+			'id' => 1,
+			'first_name' => 'Peter',
+			'last_name' => 'Griffin',
+		),
+		array(
+			'id' => 2,
+			'first_name' => 'Ben',
+			'last_name' => 'Smith',
+		),
+		array(
+			'id' => 3,
+			'first_name' => 'Joe',
+			'last_name' => 'Doe',
+		)
+	);
 
 	$last_names = array_column($a, 'first_name','id'); 
 	echo "<pre>";print_r($last_names);die;
@@ -52,24 +52,24 @@ Array
 
 ******************************************* 2. PHP array_combine() Function *******************************************
 
-Description 	:	The array_combine() function creates an array by using the elements from one "keys" array and one "values" array.
+Description 	: The array_combine() function creates an array by using the elements from one "keys" array and one "values" array.
 
-Note		:	Both arrays must have equal number of elements.
+Note		: Both arrays must have equal number of elements.
 
-Input  		: 	Two array that represents a possible record set 
+Input  		: Two array that represents a possible record set 
 
-Syntax 		:   	array_combine(keys,values); 
+Syntax 		: array_combine(keys,values); 
 
 Parameters 	: 
-	1. key		=> Required
-	2. values	=> Required
+	1. key	  => Required
+	2. values => Required
 	
 Example : 
 
 <?php
-	$fname	=	array("Peter","Ben","Joe");
-	$age	= 	array("35","37","43");
-	$c	= 	array_combine($fname,$age);
+	$fname	= array("Peter","Ben","Joe");
+	$age	= array("35","37","43");
+	$c	= array_combine($fname,$age);
 
 	echo "<pre>";print_r($c);die;
 ?>
@@ -86,19 +86,19 @@ Array
 
 ******************************************* 3. PHP array_count_values() Function *******************************************
 
-Description 	:	The array_count_values() function counts all the values of an array.
+Description 	: The array_count_values() function counts all the values of an array.
 
 Input  		: One array that represents a possible record set 
 
-Syntax 		:    array_count_values(array)
+Syntax 		: array_count_values(array)
 
 Parameters 	: 
-	1. array		=> Required
+	1. array  => Required
 	
 Example : 
 
 <?php
-	$a	=	array("A","Cat","Dog","A","Dog");
+	$a	= array("A","Cat","Dog","A","Dog");
 	$c 	= array_count_values($a);
 
 	echo "<pre>";print_r($c);die;
@@ -116,13 +116,13 @@ Array
 
 ******************************************* 4. PHP array_diff() Function *******************************************
 
-Description 	:	The array_diff() function compares the values of two (or more) arrays, and returns the differences.
+Description 	: The array_diff() function compares the values of two (or more) arrays, and returns the differences.
 			
 			This function compares the values of two (or more) arrays, and return an array that contains the entries from array1 that are not present in array2 or array3, etc.
 
-Input  		: 	Two or More array that represents a possible record set 
+Input  		: Two or More array that represents a possible record set 
 
-Syntax 		:     array_diff(array1,array2,array3...);
+Syntax 		: array_diff(array1,array2,array3...);
 
 Parameters 	: 
 	1. array1	=> Required
@@ -132,9 +132,9 @@ Parameters 	:
 Example : 
 
 <?php
-	$a1	= 	array("a"=>"red","b"=>"green","c"=>"blue","d"=>"yellow");
-	$a2	= 	array("e"=>"red","f"=>"green","g"=>"blue");
-	$result =	array_diff($a1,$a2);
+	$a1	= array("a"=>"red","b"=>"green","c"=>"blue","d"=>"yellow");
+	$a2	= array("e"=>"red","f"=>"green","g"=>"blue");
+	$result = array_diff($a1,$a2);
 	
 	echo "<pre>";print_r($result);die;
 ?>
@@ -150,12 +150,12 @@ Array
 
 ******************************************* 5. PHP array_diff_assoc Function *******************************************
 
-Description 	:	The array_diff_assoc() function compares the keys and values of two (or more) arrays, and returns the differences.
+Description 	:  The array_diff_assoc() function compares the keys and values of two (or more) arrays, and returns the differences.
 							This function compares the keys and values of two (or more) arrays, and return an array that contains the entries from array1 that are not present in array2 or array3, etc.
 
-Input  			: 	One or More array that represents a possible record set 
+Input  		:  One or More array that represents a possible record set 
 
-Syntax 			:   array_diff_assoc(array1,array2,array3...);
+Syntax 		:  array_diff_assoc(array1,array2,array3...);
 
 Parameters 	: 
 	1. array1	=> Required
@@ -165,9 +165,9 @@ Parameters 	:
 Example : 
 
 <?php
-	$a1		= array("a"=>"red","b"=>"green","c"=>"blue","d"=>"yellow",'e'=>'guru');
-	$a2		= array("a"=>"red","b"=>"green","c"=>"blue");
-	$result =array_diff_assoc($a1,$a2);
+	$a1	= array("a"=>"red","b"=>"green","c"=>"blue","d"=>"yellow",'e'=>'guru');
+	$a2	= array("a"=>"red","b"=>"green","c"=>"blue");
+	$result = array_diff_assoc($a1,$a2);
 	
 	echo "<pre>";print_r($result);die;
 ?>
