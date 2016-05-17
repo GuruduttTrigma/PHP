@@ -3,7 +3,7 @@
 	{
 		$deviceToken 	= 'dYa_J9yMo9s:APA91bGeSnpbnL24pp2BNEOYAdKLeRoQ8QIKGjdzIBZI7abzdECXxOaag_wTq5PwT_F5lvmEWrJpRosfgsqDDbcT4iTCPhJkN0hzhb0x84mlsMkbX9Dlzc_F7kpCbDThzQBdaFy9awY2';
 		$api_key 	= "AIzaSyDL_ynycfW9hL8-sERnCs2v0bc3TiXN0dE";
-		$registrationIds= array($deviceToken);
+		$registrationIds = array($deviceToken);
 		
 		$msg 		= array (
 			'message' 	=> "There's a new post in your area. Share now!.",
