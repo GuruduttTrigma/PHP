@@ -1,0 +1,12 @@
+1. Use Ternary Operators 
+
+//PHP COde Example usage for: Ternary Operator
+$todo = (empty($_POST[’todo’])) ? ‘default’ : $_POST[’todo’]; 
+ 
+// The above is identical to this if/else statement
+if (empty($_POST[’todo’])) {
+$action = ‘default’;
+} else {
+$action = $_POST[’todo’];
+}
+?>
